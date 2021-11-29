@@ -12,4 +12,4 @@ As you can see in the image, this is a Calculator. You will find a calculator pr
 <p align="center"><a href="https://kianejad.github.io/calculator-jQuery/">----- Click To View Demo -----</a></p>
 <h2></h2>
 <p>Screenshot : </p>
-<img src="https://github.com/kianejad/calculator-jQuery/blob/master/photo_%DB%B2%DB%B0%DB%B2%DB%B1-%DB%B1%DB%B1-%DB%B2%DB%B5_%DB%B1%DB%B4-%DB%B0%DB%B9-%DB%B2%DB%B3.jpg">
+<img src="https://github.com/kianejad/calculator-jQuery/blob/master/screen-shot.jpg">
