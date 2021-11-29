@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <title>calculator jQuery</title>
+</head>
+
+<body>
+    <div class="toggle">
+        <div class="on" id="moon"><span class="iconify" data-icon="emojione:full-moon" onclick="toggelDarkMood()"></span></div>
+        <div class="off" id="sun"><span class="iconify" data-icon="twemoji:sun" onclick="toggelMood()"></span></div>
+    </div>
+    <div class="cal-container">
+        <table class="cal">
+            <tbody>
+                <tr id="tr1">
+                    <td colspan="4" class="tdItems"><input type="text" readonly id="input"></td>
+                </tr>
+                <tr id="tr2">
+                    <td class="tdOprator"><input type="button" value="e" class="ad-operator" id="btn-clear"
+                            onclick="Ac()"></td>
+                    <td class="tdOprator"><input type="button" value="π" class="ad-operator" id="btn-negate"
+                            onclick="insert('**')"></td>
+                    <td class="tdOprator"><input type="button" value="sin" class="ad-operator" id="btn-percent"
+                            onclick="insert('%')"></td>
+                    <td class="tdOprator"><input type="button" value="deg" class="ad-operator" onclick="insert('/')">
+                    </td>
+                </tr>
+                <tr id="tr3">
+                    <td class="tdItems"><input type="button" value="AC" class="spe-operator" id="btn-clear"
+                            onclick="Ac()"></td>
+                    <td class="tdItems"><input type="button" value="**" class="spe-operator" id="btn-negate"
+                            onclick="insert('**')"></td>
+                    <td class="tdItems"><input type="button" value="%" class="spe-operator" id="btn-percent"
+                            onclick="insert('%')"></td>
+                    <td class="tdItems"><input type="button" value="÷" class="operator" onclick="insert('/')"></td>
+                </tr>
+                <tr id="tr4">
+                    <td class="tdItems"><input type="button" value="7" class="num" onclick="insert(7)"></td>
+                    <td class="tdItems"><input type="button" value="8" class="num" onclick="insert(8)"></td>
+                    <td class="tdItems"><input type="button" value="9" class="num" onclick="insert(9)"></td>
+                    <td class="tdItems"><input type="button" value="×" class="operator" onclick="insert('*')"></td>
+                </tr>
+                <tr id="tr5">
+                    <td class="tdItems"><input type="button" value="4" class="num" onclick="insert(4)"></td>
+                    <td class="tdItems"><input type="button" value="5" class="num" onclick="insert(5)"></td>
+                    <td class="tdItems"><input type="button" value="6" class="num" onclick="insert(6)"></td>
+                    <td class="tdItems"><input type="button" value="-" class="operator" onclick="insert('-')"></td>
+                </tr>
+                <tr id="tr6">
+                    <td class="tdItems"><input type="button" value="1" class="num" onclick="insert(1)"></td>
+                    <td class="tdItems"><input type="button" value="2" class="num" onclick="insert(2)"></td>
+                    <td class="tdItems"><input type="button" value="3" class="num" onclick="insert(3)"></td>
+                    <td class="tdItems"><input type="button" value="+" class="operator" onclick="insert('+')"></td>
+                </tr>
+                <tr id="tr7">
+                    <td colspan="2" class="tdItems"><input type="button" value="0" id="zero" class="num"
+                            onclick="insert(0)"></td>
+                    <td class="tdItems"><input type="button" value="." id="decimal-point" class="num"
+                            onclick="insert('.')"></td>
+                    <td class="tdItems"><input type="button" value="=" class="btn-equal" id="equal" onclick="equal()">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>
